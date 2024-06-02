@@ -1,0 +1,101 @@
+/* List Container Styles */
+.list {
+    display: flex;
+    width: 600px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .list:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Student Information Styles */
+  .student_id {
+    border-radius: 20px;
+    padding: 4px 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .student_name {
+    padding-left: 10px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .student_total {
+    position: absolute;
+    right: 20px;
+    color: #8c8c8c;
+    font-style: italic;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    width: 360px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    visibility: hidden;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    animation: popup-fade 0.3s ease-in-out;
+  }
+  
+  @keyframes popup-fade {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .open_popup {
+    visibility: visible;
+  }
+  
+  .id {
+    padding: 10px 0;
+    background-color: #9370DB;
+    color: white;
+    margin: 0 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn {
+    padding: 10px 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #388E3C;
+  }
